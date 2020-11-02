@@ -25,3 +25,5 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 ## Assignment Submission
 
 When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+
+Simon, Tina, Nathan, JP, and Mariko collaborated with me for the completion of these code challenges.
