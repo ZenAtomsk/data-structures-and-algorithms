@@ -41,7 +41,8 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  return callback(times);
+
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
