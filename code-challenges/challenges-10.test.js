@@ -60,6 +60,17 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 const totalSum = (input) => {
   // Solution code here...
+  
+
+  var zero = {}
+  let sum = input.reduce(function(r, e, i) {
+  e.forEach(function(n, j) {
+    if (n == 0) zero[j] = true;
+    if (!zero[j]) r += n;
+  })
+  return r;
+}, 0)
+  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
