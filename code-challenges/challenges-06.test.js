@@ -128,14 +128,11 @@ const hasChildrenValues = (arr, character) => {
   let hasChildren = false;
   
   arr.forEach(data => {
-    if (Object.values(data)){
-      console.log();
-      hasChildren = true;
-    } else {
-      hasChildren = false;
+    if (character === data.name) {
+      Object.values(data)[2].length > 0 ? hasChildren = true : hasChildren = false;
     }
-  })
-  // return hasChildren;
+  });
+  return hasChildren;
 };
 
 /* ------------------------------------------------------------------------------------------------
