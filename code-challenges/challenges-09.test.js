@@ -255,7 +255,7 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
-  let charNames = arr.reduce (function(accumulator, value, index){
+  let charNames = arr.reduce(function(accumulator, value, index){
     accumulator.push(value.name);
     return accumulator;
   }, []);
