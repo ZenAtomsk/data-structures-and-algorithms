@@ -66,7 +66,8 @@ const standardizePhoneNumbers = (arr) => {
   // Solution code here...
   let resultArr = [];
   arr.forEach(data => {
-    resultArr.push(data.replace(/^[(]|[)]|[\s]|[-]/g, ''));
+    // resultArr.push(data.replace(/^[(]|[)]|[\s]|[-]/g, ''));
+    resultArr.push(data.replace(/\D+/g, ''));
   })
     return resultArr;
 };
