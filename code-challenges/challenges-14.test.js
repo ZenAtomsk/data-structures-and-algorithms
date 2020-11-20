@@ -131,6 +131,19 @@ let biggerThanLuke = (arr) => {
   return heavyWeights.replace(/^[\s][-][\s]/, '');
 };
 
+// let biggerThanLuke = (arr) => {
+//   // Solution code here...
+//   let heavyWeights = [];
+//   arr.forEach(data => {
+//     if( data.mass > 77) {
+//       heavyWeights.push(data.name);
+//     }
+//   })
+//   return heavyWeights.join(' - ');
+// };
+
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 Write a function named sortBy that takes in an array of objects, each of which has a particular property, and sorts those objects by that property, lowest to highest, returning the same array.
