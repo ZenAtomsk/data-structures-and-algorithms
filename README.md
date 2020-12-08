@@ -63,3 +63,9 @@ The final structure should resemble this:
   ├── package.json
   └── README.md
 ```
+
+--- 
+
+## Table of Contents
+
+- [401 code challenge: Class 01](javascript/code-challenges/arrayReverse/README.md)
