@@ -70,3 +70,4 @@ The final structure should resemble this:
 
 - [401 code challenge: Class 01 array-reverse](javascript/code-challenges/arrayReverse/README.md)
 - [401 code challenge: class 02 array-shift](javascript/code-challenges/arrayShift/README.md)
+- [401 code challenge: class 03 array-binary-search](javascript/code-challenges/arrayBinarySearch/README.md)
