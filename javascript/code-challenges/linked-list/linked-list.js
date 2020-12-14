@@ -28,15 +28,15 @@ class LinkedList{
     }
   }
 
-  toString(value){
-    let current = this.head;
-    let string = '';
-    while(current){
-      string += current.value + '->';
+  toString(){
+    let current = this.head; //
+    let string = [];
+    while(current !== null){
+      string.push(`{ ${current.value} }`);
       current = current.next;
     }
-    string +='null';
-    return string;
+    string.push('NULL')
+    return string.join(' -> ')
   }
 }
 
