@@ -26,6 +26,17 @@ class LinkedList{
     }else{
       return false
     }
+
+    // if(!this.head){
+    //   return false;
+    // }
+    // //loop through our linked list to see if the value is there
+    // let currentNode = this.head;
+    // while(currentNode !== null){
+    //   if(currentNode.value === value)return true;
+    //   currentNode = currentNode.next;
+    // }
+    // return false;
   }
 
   toString(){
@@ -37,6 +48,54 @@ class LinkedList{
     }
     string.push('NULL')
     return string.join(' -> ')
+
+    // let newString = '';
+    // let current = this.head;
+    // while(current.next){
+    //   newString += `{${current.value}} -> `;
+    //   current = current.next;
+    // }
+    // newString += `{${current.value}} -> NULL`
+  }
+
+  append(newValue) {
+    const newNode = new Node(newValue);
+    let currentNode = this.head;
+    while (currentNode.next !== null) {
+      currentNode = currentNode.next;
+    }
+    currentNode.next = newNode;
+    newNode.next = null;
+  }
+
+  //Code Challenge Day 06 Below
+  insertBefore(givenValue, newValue) {
+    if(this.head === null) return false;
+    const newNode = new Node(newValue);
+    let currentNode = this.head;
+    if(currentNode.value === givenValue) {
+      newNode.next = currentNode;
+      newNode = this.head;
+    }
+    let nextNode = currentNode.next;
+    while (nextNode.value !== givenValue) {
+      currentNode = currentNode.next;
+      nextNode = nextNode.next;
+    }
+    currentNode.next = newNode;
+    newNode.next = nextNode;
+  }
+  insertAfter(givenValue, newValue) {
+    if(this.head === null) return false;
+    const newNode = new Node(newValue);
+    let currentNode = this.head;
+    let nextNode = currentNode.next;
+    while(currentNode.value !== givenValue) {
+      currentNode = currentNode.next;
+      nextNode = nextNode.next;
+    }
+    currentNode.next = newNode;
+    newNode.next = nextNode;
   }
 }
 

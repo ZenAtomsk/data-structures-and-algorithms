@@ -20,4 +20,4 @@ toString() - Returns the elements found in a linked list as a string.
 
 - [Linked List](linked-list.js) 
 
-![Whiteboard](assets/)
+![Whiteboard](assets/codechalleng06.png)
