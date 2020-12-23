@@ -74,3 +74,5 @@ The final structure should resemble this:
 - [401 code challenge: class 05: linked list](javascript/code-challenges/linkedList/README.md)
 - [401 code challenge: class 06: linked list](javascript/code-challenges/linkedList/README.md)
 - [401 code challenge: class 07: linked list](javascript/code-challenges/linkedList/README.md)
+- [401 code challenge 11: Queue with Stacks](javascript/code-challenges/queuesWithStacks/README.md)
+- [401 code challenge 12: Animal Shelter](javascript/code-challenges/fifoAnimalShelter/README.md)
