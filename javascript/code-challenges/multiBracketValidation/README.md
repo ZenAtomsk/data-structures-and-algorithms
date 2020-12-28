@@ -12,6 +12,6 @@ O(n) time & space
 
 ## Solution
 
-- [Animal Shelter Queue](fifo-animal-shelter.js) 
+- [Multi Bracket Validation](multi-bracket-validation.js) 
 
 ![Whiteboard](assets/codechallenge13whiteboard.png)
