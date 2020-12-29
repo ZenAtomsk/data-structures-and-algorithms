@@ -32,4 +32,4 @@ Creates a Node class, Binary Tree class, and Binary Search Tree class
 
 - [Binary Tree and BST Implementation](tree.js) 
 
-![Whiteboard](assets/cc16.png)
+![cc 16 Whiteboard](assets/cc16.png)
