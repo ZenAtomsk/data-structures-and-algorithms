@@ -1,6 +1,8 @@
 # Challenge Summary
 
-Binary Tree and BST Implementation
+Binary Tree and BST Implementation 
+
+ - Find Max Value
 
 ## Challenge Description
 
@@ -31,5 +33,6 @@ Creates a Node class, Binary Tree class, and Binary Search Tree class
 ## Solution
 
 - [Binary Tree and BST Implementation](tree.js) 
+- [Find Max Value](tree.js) 
 
 ![cc 16 Whiteboard](./assets/cc16.png)
