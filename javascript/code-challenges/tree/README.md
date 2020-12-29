@@ -26,8 +26,10 @@ Creates a Node class, Binary Tree class, and Binary Search Tree class
 
 - **contains** - returns a boolean indicating whether a searched value is located in a binary search tree
 
+- **findMaxValue** - returns the highest value in the tree
+
 ## Solution
 
 - [Binary Tree and BST Implementation](tree.js) 
 
-![Whiteboard](assets/)
+![Whiteboard](assets/cc16.png)

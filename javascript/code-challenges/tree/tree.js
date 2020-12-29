@@ -50,11 +50,23 @@ class BinaryTree{
     _recursionPre(this.root);
     
   }
+
+  findMaxValue(){
+    let tempVar = this.root.value;
+    
+    let _walk = (node)=>{
+      if(node.leftChild){ _walk(node.leftChild);}
+      if(node.rightChild){ _walk(node.rightChild);}
+      if(node.value > tempVar) tempVar = node.value;
+    }
+    _walk(this.root);
+    return tempVar;
+  }
 }
 
 class BinarySearchTree extends BinaryTree{
   constructor(){
-    this.root = null;
+    super();
   }
 
 
@@ -93,7 +105,18 @@ class BinarySearchTree extends BinaryTree{
     _recursion(this.root);
   }
 
-  contains(){
-    
+  contains(value){
+
+    let _walk = (node)=>{
+      if(node.leftChild){ _walk(node.leftChild);}
+      if(node.rightChild){ _walk(node.rightChild);}
+      if(node.value === value) {
+        return true;
+      }
+      else return false;
+    }
+    _walk(this.root);
   }
 }
+
+module.exports = {Node, BinaryTree, BinarySearchTree};
