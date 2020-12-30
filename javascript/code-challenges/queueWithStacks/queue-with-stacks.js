@@ -46,3 +46,5 @@ class PseudoQueue{
 
   // dequeue()
 }
+
+module.exports = Queue;
