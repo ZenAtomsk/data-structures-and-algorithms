@@ -30,26 +30,26 @@ class BinaryTree{
   inOrder(){
     const results = [];
 
-    let _recursionPre = (node)=>{
-      if(node.leftChild) _recursionPre(node.leftChild);
+    let _recursionIn = (node)=>{
+      if(node.leftChild) _recursionIn(node.leftChild);
       results.push(node.value);
-      if(node.rightChild) _recursionPre(node.rightChild);
+      if(node.rightChild) _recursionIn(node.rightChild);
     }
 
-    _recursionPre(this.root);
+    _recursionIn(this.root);
     
   }
   
   postOrder(){
     const results = [];
 
-    let _recursionPre = (node)=>{
-      if(node.leftChild) _recursionPre(node.leftChild);
-      if(node.rightChild) _recursionPre(node.rightChild);
+    let _recursionPost = (node)=>{
+      if(node.leftChild) _recursionPost(node.leftChild);
+      if(node.rightChild) _recursionPost(node.rightChild);
       results.push(node.value);
     }
 
-    _recursionPre(this.root);
+    _recursionPost(this.root);
     
   }
 
@@ -67,21 +67,34 @@ class BinaryTree{
   }
 
   breadthFirst(){
-    if(!this.root) return null; //check if tree exists, if not escape
-    let breadthQueue = []; //declare array queue
-    let outputArray = []; //declare output array
-    breadthQueue.push(this.root); //push this.root into queue
-    while(breadthQueue.length > 0) { //loop while queue exists
-      let frontVariable = breadthQueue.shift(); //pull off front of que put into temp var
+
+    //check if tree exists, if not escape
+    if(!this.root) return null; 
+
+    //declare array queue
+    let breadthQueue = []; 
+    //declare output array
+    let outputArray = []; 
+    //push this.root into queue
+    breadthQueue.push(this.root); 
+    //loop while queue exists
+    while(breadthQueue.length > 0) { 
+      //pull off front of que put into temp var
+      let frontVariable = breadthQueue.shift(); 
       outputArray.push(frontVariable.value); 
-      if(frontVariable.leftChild) { //check for left child
-        breadthQueue.push(frontVariable.leftChild); //push into queue
+      //check for left child
+      if(frontVariable.leftChild) { 
+        //push into queue
+        breadthQueue.push(frontVariable.leftChild); 
       }
-      if(frontVariable.rightChild) { //check for right child
-        breadthQueue.push(frontVariable.rightChild); //push into queue
+      //check for right child
+      if(frontVariable.rightChild) { 
+      //push into queue
+        breadthQueue.push(frontVariable.rightChild); 
       }
     }
-    return outputArray; //return output array
+    //return output array
+    return outputArray; 
   }
 
   // breadthFirst(){
