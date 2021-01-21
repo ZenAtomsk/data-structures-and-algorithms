@@ -59,27 +59,34 @@ class HashMap{
 
   get(key){
     let index = this.hash(key);
-    // if(this.map[index]){
     let current = this.map[index].head;
-
-    if(this.contains(key) === false){
-      return; //return something;
-    }
     
+    if(!this.map[index]){return null;}
+    // if(this.contains(key) === false){return null;} //return something;
     while(current){
-      // console.log('current.value', Object.values(current.value));
-      // console.log('current.value', Object.keys(current.value))
-      let keyOfObject = Object.keys(current.value);
-      let valueOfObject = Object.values(current.value);
-      // console.log({keyOfObject})
-      // console.log({index});
-      if(keyOfObject[0] === key){
-        return valueOfObject[0];
-      }
-      current = current.next
+      if(current.value.hasOwnProperty(key)){return current.value[key]}
+      current = current.next;
+  //  let keyOfObject = Object.keys(current.value);
+  //  let valueOfObject = Object.values(current.value);
+  //  if(keyOfObject[0] === key){
+  //    return valueOfObject[0];
+  //  }
+  //  current = current.next
     }
-    // }
+    return null;
   }
+
+    // [
+    //   {
+    //     hash: head{{
+    //                value: { key: value},
+    //                next: {value: {key: value},
+    //                       next: null  
+    //                      }
+    //     }}
+    //   }
+    // ]
+  
 
   contains(key){
     let index = this.hash(key);
