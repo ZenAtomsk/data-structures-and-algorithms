@@ -53,6 +53,9 @@ class Graph{
   }
 
   bfs(startNode){
+
+    if(!startNode){return null}
+
     const queue = [];
 
     //a set is an object that will only store unique keys

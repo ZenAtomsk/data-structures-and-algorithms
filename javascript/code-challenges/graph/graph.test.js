@@ -65,6 +65,9 @@ describe('Graph data structure', ()=>{
   })
 
   it('7. A graph with only one node and edge can be properly returned', ()=>{
+    let graph = new Graph();
+    // graph.addVertex('a');
+    // graph.addDirectedEdge('a', 'a', 0);
 
   })
 
