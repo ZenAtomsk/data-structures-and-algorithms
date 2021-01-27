@@ -56,3 +56,5 @@
 ## Solution 37 gitEdge
 
 - [gitEdge](./graph.js)
+
+![whiteboard](./assets/code-challenge37.png)
